@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="título">Calculadora</h1>
+    <!--Criando o fromulário-->
+    <form class="Formulário">
+        <label for = "text">Número 1:</label>
+        <br/>
+        <input type="text" id="txtn1" required/>
+        <br/>
+        <label for = "text">Número 2:</label>
+        <br/>
+        <input type="text" id="txtn2" required/>
+        <br/>
+        <div class="operadores">
+            <input  type= "button"  value="+"  onclick="calc('+')"/>
+            <input  type= "button"  value="-"  onclick="calc('-')"/>
+            <input  type= "button"  value="*"  onclick="calc('*')"/>
+            <input  type= "button"  value="/"  onclick="calc('/')"/>
+            <input type = "reset" value="C"/>
+        </div>
+        <label for = "text">Resultado:</label>
+        <input type="text" id="txtresu" required/>
+        <label for = "text"> Par ou Impar:</label>
+        <input type="text" id="txtparimpar" required/>
+    </form>
+</body>
+</html>
